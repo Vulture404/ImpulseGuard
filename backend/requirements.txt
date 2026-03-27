@@ -1,1 +1,6 @@
-fastapi uvicorn beautifulsoup4 requests google-generativeai pydantic 
+fastapi
+uvicorn
+google-generativeai
+requests
+beautifulsoup4
+python-dotenv
