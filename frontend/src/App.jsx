@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link as LinkIcon, AlertTriangle, ArrowRight, Edit3, ShieldAlert, CheckCircle } from 'lucide-react';
 
-const API_URL = "https://your-new-railway-link.up.railway.app";
+const API_URL = "https://impulseguard.onrender.com";
 
 function App() {
   const [income, setIncome] = useState(60000);
