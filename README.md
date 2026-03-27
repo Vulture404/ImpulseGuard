@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # ⏳ TimeVault (ImpulseGuard)
 
 > A brutalist, AI-powered behavioral finance deterrent designed to mathematically and psychologically halt impulse buying.
@@ -57,3 +58,7 @@ This forces Gemini to guarantee a strict 3-part dictionary format containing:
 3. `ai_reasoning`
 
 To ensure robust persistence in production, Python `Exception` handlers form a steel trap at the bottom of the stack. If the Google APIs experience an outage, return a 403 Forbidden, or decode improperly, the Exception Handler forcefully injects a `0-hour` threshold payload back to React—deliberately isolating Path A and routing *all* items safely to the protective Path B gate.
+=======
+# ImpulseGuard
+A brutalist, AI-powered intervention tool that stops impulse buying by translating product prices into the actual days and hours of your life they cost.
+>>>>>>> 9412d27775cead3d5f82cd0e110701eedfa40e34
