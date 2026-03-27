@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link as LinkIcon, AlertTriangle, ArrowRight, Edit3, ShieldAlert, CheckCircle } from 'lucide-react';
 
+const API_URL = "https://your-new-railway-link.up.railway.app";
+
 function App() {
   const [income, setIncome] = useState(60000);
   const [expenses, setExpenses] = useState(30000);
@@ -58,7 +60,7 @@ function App() {
     setConfirmText('');
     
     try {
-      const response = await axios.post('http://127.0.0.1:8000/scrape', { url });
+      const response = await axios.post(`${API_URL}/scrape`, { url });
       const { title, price, success } = response.data;
       
       setItemTitle(title || '');
@@ -91,7 +93,7 @@ function App() {
     
     setLoading(true);
     try {
-      const response = await axios.post('http://127.0.0.1:8000/evaluate', {
+      const response = await axios.post(`${API_URL}/evaluate`, {
          title: itemTitle,
          price: numericPrice
       });
